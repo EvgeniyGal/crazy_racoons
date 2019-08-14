@@ -1,0 +1,33 @@
+.ordinary-people {
+  @extend %main-text;
+  line-height: 1.5;
+  width: 295px;
+  margin: 0 auto;
+}
+.ordinary-people__title {
+  @extend %headline-text;
+  line-height: 1.5;
+  margin-bottom: 23px;
+  padding-left: 30px;
+}
+.ordinary-people__desription {
+  padding-left: 30px;
+}
+.ordinary-people__desription--line {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.ordinary-people__desription--line::before {
+  content: '';
+  display: block;
+  width: 21px;
+  height: 3px;
+  background-color: $secondary-color;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+.ordinary-people__desription--highlited {
+  @extend %secondary-reverse-text;
+}
