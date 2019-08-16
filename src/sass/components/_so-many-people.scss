@@ -4,8 +4,6 @@ img {
   height: auto;
 }
 .many-people {
-  width: 445px;
-  margin: 0 auto;
   @extend %main-text;
   margin-bottom: 30px;
   &__title {
