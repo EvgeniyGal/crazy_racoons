@@ -1,9 +1,6 @@
 .warn-section {
-  margin: 0;
-  padding: 0;
+  padding: 0 68px;
   @extend %main-text;
-  width: 350px;
-  margin: 0 auto;
   margin-bottom: 66px;
   &__title {
     @extend %headline-text;

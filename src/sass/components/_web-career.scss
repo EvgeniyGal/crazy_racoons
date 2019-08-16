@@ -4,10 +4,6 @@ img {
   height: auto;
 }
 .web-career {
-  margin: 0;
-  padding: 0;
-  width: 450px;
-  margin: 0 auto;
   @extend %main-text;
   margin-bottom: 44px;
   &__title {

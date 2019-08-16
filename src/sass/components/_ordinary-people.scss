@@ -1,9 +1,6 @@
 .ordinary-people {
-  margin: 0;
-  padding: 0;
+  padding: 0 92px;
   @extend %main-text;
-  width: 295px;
-  margin: 0 auto;
   margin-bottom: 54px;
   &__title {
     @extend %headline-text;
@@ -33,6 +30,8 @@
 }
 
 .discussion {
+  width: 295px;
+  margin: 0 auto;
   position: relative;
   box-shadow: $form-box-shadow;
   &__photo {
@@ -55,6 +54,8 @@
 }
 
 .section-nav {
+  width: 295px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
