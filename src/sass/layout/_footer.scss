@@ -1,3 +1,26 @@
-.testfont {
-  font: 800 5rem $main-font;
+.page-footer {
+  background: $page-footer-bg;
+  
+  &__box {
+    display: flex;
+    padding: 0 1rem;
+    
+  }
+}
+
+.page-sub-footer {
+  background: $page-sub-footer-bg;
+  display: flex;
+  padding: 0.7rem 1rem;
+
+  &__link {
+    color: $page-sub-footer-text-color;
+    font: 100 0.6rem $main-font;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+
+  &__logo-ra {
+    width: 1.4rem;
+  }
 }
