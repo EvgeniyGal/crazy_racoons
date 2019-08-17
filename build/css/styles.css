@@ -440,6 +440,8 @@ template {
 .record-section__achievements-list__item__description,
 .opportunity-section__opportunities-list__item__content__description,
 .gain-section__get-list__item__content__description,
+.video-course-section__what-is-list__item__description,
+.video-course-section__what-you-get-list__item-desc__description,
 .slyder-text,
 .start-it-text,
 .start-it-list,
@@ -460,6 +462,7 @@ template {
 
 .ordinary-people__description,
 .opportunity-section__opportunities-list__item__content__headline,
+.video-course-section__what-you-get-list__item-desc__headline,
 .slyder-subtilte-top,
 .slyder-subtilte,
 .warn-section__description,
@@ -495,6 +498,7 @@ template {
 .record-section__headline,
 .gain-section__headline,
 .gain-section__get-list__item__number,
+.video-course-section__headline,
 .start-it__section-title,
 .facts-title,
 .warn-section__title,
@@ -525,6 +529,7 @@ template {
 .record-section__achievements-list__item__headline,
 .opportunity-section__secondary-headline,
 .gain-section__get-list__item__content__headline,
+.video-course-section__what-you-get-headline,
 .start-it-subtitle,
 .start-it-subject,
 .future-item-title,
@@ -538,6 +543,7 @@ template {
   line-height: 19.5px;
 }
 
+.video-course-section__what-is-list__item__headline--bg-black,
 .many-people__text--reverse {
   font-family: "Acrom", sans-serif;
   font-weight: 700;
@@ -551,6 +557,7 @@ template {
 .leading-section__description,
 .record-section__text,
 .opportunity-section__offer,
+.video-course-section__description,
 .future-subtitle,
 .future-subtitle-last {
   font-family: "Acrom", sans-serif;
@@ -569,7 +576,8 @@ template {
   line-height: 19.5px;
 }
 
-.record-section__text--bgblue {
+.record-section__text--bgblue,
+.video-course-section__price__text--bg-blue {
   font-family: "Acrom", sans-serif;
   font-weight: 500;
   font-size: 13.5px;
@@ -578,7 +586,8 @@ template {
   line-height: 19.5px;
 }
 
-.opportunity-section__opportunities-list__item__number--bg-orange {
+.opportunity-section__opportunities-list__item__number--bg-orange,
+.video-course-section__what-you-get-list__item__number--bg-orange {
   font-family: "Acrom", sans-serif;
   font-weight: 700;
   font-size: 13.5px;
@@ -630,6 +639,7 @@ template {
 
 .ordinary-people__description--line::before,
 .opportunity-section__offer::before,
+.video-course-section__description::before,
 .warn-section__description--line::before,
 .many-people__description--line::before,
 .web-career__description--line::before {
@@ -932,6 +942,119 @@ template {
 
 .gain-section__text {
   margin-bottom: 35px;
+}
+
+.video-course-section {
+  text-align: center;
+  padding: 0 105px;
+}
+
+.video-course-section__headline {
+  margin-bottom: 20px;
+}
+
+.video-course-section__description {
+  display: flex;
+  text-align: left;
+}
+
+.video-course-section__description::before {
+  width: 40px;
+  transform: translateY(500%);
+  margin-right: 20px;
+}
+
+.video-course-section__image {
+  padding: 0 20px;
+}
+
+.video-course-section__image-foto {
+  display: block;
+  margin: 35px 0 30px;
+}
+
+.video-course-section__what-is-list {
+  padding-left: 0;
+}
+
+.video-course-section__what-is-list__item {
+  list-style-type: none;
+  text-align: left;
+}
+
+.video-course-section__what-is-list__item__headline--bg-black {
+  margin-bottom: 15px;
+}
+
+.video-course-section__what-is-list__item__description {
+  margin-bottom: 40px;
+}
+
+.video-course-section__what-you-get {
+  padding: 0 55px;
+}
+
+.video-course-section__what-you-get-list {
+  padding-left: 0;
+}
+
+.video-course-section__what-you-get-list__item {
+  display: flex;
+  margin-bottom: 30px;
+  list-style-type: none;
+}
+
+.video-course-section__what-you-get-list__item__number--bg-orange {
+  text-align: center;
+  height: 10px;
+  transform: rotate(-90deg) translate(-100%, -100%);
+}
+
+.video-course-section__what-you-get-list__item-desc__headline {
+  margin-bottom: 5px;
+}
+
+.video-course-section__what-you-get-list__item-desc__description {
+  margin: 0;
+}
+
+.video-course-section__what-you-get-list__item:last-child {
+  margin-bottom: 60px;
+}
+
+.video-course-section__price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-course-section__price__text {
+  padding-top: 25px;
+}
+
+.video-course-section__price__text--bg-blue {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.video-course-section__price__numbers {
+  font-family: "Acrom", sans-serif;
+  font-weight: 800;
+  line-height: 44px;
+}
+
+.video-course-section__price__numbers__old {
+  font-size: 17px;
+  color: #3f4144;
+  text-decoration: line-through;
+}
+
+.video-course-section__price__numbers__new {
+  font-size: 36px;
+  color: #000000;
+}
+
+.video-course-section__price__numbers__new--grn {
+  font-size: 20px;
 }
 
 .wrapper-slyder {
