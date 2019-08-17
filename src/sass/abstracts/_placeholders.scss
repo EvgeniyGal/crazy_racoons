@@ -104,6 +104,37 @@
   background-color: $text-bg-color;
   line-height: 19.5px;
 }
+
+%headline-text-bonus {
+  font-family: $main-font;
+  font-weight: 800;
+  font-size: 13.5px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+
+%headline-reverse-bonus-text {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 11.7px;
+  color: $main-color;
+  line-height: 17.7px;
+  background-color: $secondary-color;
+}
+
+%button-form {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  font: 800 8px/12px $main-font;
+  color: $main-color;
+  background-color: $btn-main-color;
+  box-shadow: $btn-box-shadow;
+  padding: 8px 20px;
+}
+
 //вертикальная нумерация ul в оранжевой обвертке
 %numbers-of-list {
   font-family: $main-font;
@@ -144,7 +175,7 @@
   background-color: $secondary-color;
 }
 
-%list-style-square-big-blue {
+%list-style-square-big-black {
   content: '';
   display: block;
   width: 10px;
