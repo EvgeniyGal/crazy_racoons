@@ -41,12 +41,30 @@
   line-height: 24px;
 }
 
+%headline-text-bonus {
+  font-family: $main-font;
+  font-weight: 800;
+  font-size: 13.5px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+
 %headline-reverse-text {
   font-family: $main-font;
   font-weight: 800;
   font-size: 18px;
   color: $main-color;
   text-transform: uppercase;
+  background-color: $secondary-color;
+}
+
+%headline-reverse-bonus-text {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 11.7px;
+  color: $main-color;
+  line-height: 17.7px;
   background-color: $secondary-color;
 }
 
@@ -104,15 +122,13 @@
   background-color: $text-bg-color;
   line-height: 19.5px;
 }
-//вертикальная нумерация ul в оранжевой обвертке
+
 %numbers-of-list {
   font-family: $main-font;
   font-weight: 700;
   font-size: 13.5px;
   color: $main-color;
   background-color: $btn-main-color;
-  height: fit-content;
-  transform: rotate(90deg);
 }
 
 // и куда же без кнопочек (: обратите внимание, что последние три кнопки в макете меньше
@@ -131,6 +147,18 @@
   box-shadow: $btn-box-shadow;
 }
 
+%button-form {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  font: 800 8px/12px $main-font;
+  color: $main-color;
+  background-color: $btn-main-color;
+  box-shadow: $btn-box-shadow;
+  padding: 8px 20px;
+}
+
 %list-style-square-small-black {
   content: '';
   display: block;
@@ -139,13 +167,12 @@
   background-color: $secondary-color;
 }
 
-%list-style-square-big-blue {
+%list-style-square-big-black {
   content: '';
   display: block;
   width: 10px;
   height: 10px;
   background-color: $secondary-color;
-  margin-left: 17px;
 }
 
 %list-style-square-small-blue {

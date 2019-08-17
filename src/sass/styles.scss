@@ -1,7 +1,6 @@
 /*
    Import partials below
 */
-@import './base/reset';
 @import './base/normalize';
 @import './base/fonts';
 @import './abstracts/variables';
@@ -16,10 +15,9 @@
 @import './components/sections-lines';
 @import './layout/forms';
 @import './layout/header';
+@import './layout/footer';
 @import './layout/navigation';
 @import './layout/sections';
-@import './layout/section_steps';
-@import './layout/section_info';
 @import './components/buttons';
 @import './components/ordinary-people.scss';
 @import './layout/section13-leading';
@@ -27,11 +25,12 @@
 @import './layout/section14-opportunity';
 @import './layout/section15-gain';
 @import './layout/section-16';
+@import './layout/section-17';
+
 @import './layout/slyder';
 @import './layout/start-it';
 @import './layout/facts';
 @import './layout/future';
-@import './layout/footer';
 
 @import './components/warn-section';
 @import './components/so-many-people.scss';
