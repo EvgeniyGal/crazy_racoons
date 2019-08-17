@@ -51,6 +51,33 @@
 //оранжевые номера элементов списка
 .list-number {
     @extend %numbers-of-list;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 14px;
+        height: -webkit-fill-available;
+        background-image: linear-gradient(
+            to left,
+            rgba(255, 255, 255, 1) 35%,
+            rgba(255, 255, 255, 0) 35%
+            );
+    }
+}
+
+.list-number-regular {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        background-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 1) 25%,
+            rgba(255, 255, 255, 0) 25%
+            );
+    }
 }
 
 //кнопочки (:
