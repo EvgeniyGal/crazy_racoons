@@ -78,6 +78,9 @@
 
 .slesh_text{
     display: flex;
+    width: 360px;
+    text-align: left;
+    margin: 0 auto;
 }
 
 .slesh::before{
@@ -90,4 +93,6 @@
 
 .text_orange{
     @extend %except-text;
+    font-size: 15px;
+    font-weight: 500;
 }

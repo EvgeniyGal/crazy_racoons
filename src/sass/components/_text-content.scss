@@ -1,0 +1,53 @@
+.sections-title {
+  font: 700 1.8rem/1.33 $main-font;
+  text-transform: uppercase;
+  
+  &--descr-bot{
+    margin-bottom: 1.8rem;
+  }
+  
+  &--large {
+    font-size: 2rem;
+    font-weight: 800;    
+  }
+  
+  &__descr{
+    font: 500 1.35rem/1.44 $main-font;
+    
+    &::before{
+      content: '';
+      background-color: $secondary-color;
+      display: inline-block;
+      width: 1.4rem;
+      height: .4rem;
+      padding: .6rem 1.4rem 0 0 ;
+      background-clip: content-box;
+    }
+  }
+}
+
+.bg-deco-text-vert{
+  display: inline-block;
+  font: 800 10.2rem $main-font;
+  writing-mode: vertical-rl;
+  color: $bg-decor-text;
+}
+
+.content-text{
+  font: 500 1.35rem/1.44 $main-font;
+  color: $main-text-color;
+  
+  &--bold{
+    font: 700 1.35rem/1.44 $main-font;
+    color: $secondary-color;
+  }
+  
+  &--colored{
+    font: 500 1.35rem/1.44 $main-font;
+    color: $content-text-colored;
+  }
+
+  &--al-right{
+    text-align: right;
+  }
+}
