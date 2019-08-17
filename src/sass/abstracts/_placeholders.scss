@@ -142,13 +142,9 @@
   font-size: 13.5px;
   color: $main-color;
   background-color: $btn-main-color;
-
-  writing-mode: tb;
-  transform: rotate(180deg);  
-  display: block;
-  height: fit-content;  
-
+  white-space: nowrap;
 }
+
 
 // и куда же без кнопочек (: обратите внимание, что последние три кнопки в макете меньше
 %button-style {
@@ -161,10 +157,16 @@
   color: $main-color;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   background-color: $btn-main-color;
   padding-top: 20px;
   padding-bottom: 20px;
   box-shadow: $btn-box-shadow;
+  transition: background-color 100ms linear, box-shadow 100ms linear;
+  &:hover {
+    background-color: $btn-hover-color;
+    box-shadow: $btn-box-shadow-hover;
+  }  
 }
 
 %list-style-square-small-black {
@@ -200,6 +202,9 @@
   width: 10px;
   height: 10px;
   background-color: $text-bg-color;
+  position: absolute;
+  left: 100%;
+  transform: translate(-100%);
 }
 
 %list-style-square-big-orange {
