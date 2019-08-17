@@ -1,49 +1,59 @@
 .opportunity-section {
-    padding-top: 15px;
+    margin-bottom: 25px;
+    position: relative;    
     &__image {
         display: block;
         margin: 0 auto;
         margin-bottom: 45px;
-        width: auto;
+        width: auto;      
+    }
+    &__bg {
+        position: absolute;
+        top: 1%;
+        left: 35%;
+        font-family: $main-font;
+        font-size: 226px;
+        font-weight: 800;
+        color: #f7f7f7;
+        z-index: -1;
+        transform: rotate(90deg);
+
     }
     &__usually {
-        @extend %except-text;
-        font-weight: 500;
-        margin-bottom: 25px;
+        position: relative;
+        padding: 0px 50px 25px 65px;
+        &::before {
+            @extend %slash;
+            left: 40px;            
+        }       
     }
     &__slogan {
-        margin-bottom: 25px;
-        &--bgblack {
-            @extend %headline-reverse-text;
-        }
+        padding: 0px 75px 25px 75px;         
     }
-    &__offer {
-        @extend %secondary-text;
-        margin-bottom: 60px;
+    &__offer { 
+        position: relative;  
+        padding: 0px 75px 60px 115px;        
         &::before {
             @extend %dash-big;
+            position: absolute;
+            left: 75px;
+            top: 10px;
         }
     }
-    &__secondary-headline {
-        @extend %slogan-text;
-        margin-bottom: 35px;
+    &__secondary-headline {  
+        padding: 0px 50px 35px 40px;
     }
     &__opportunities-list {
         list-style: none;
         &__item {
             display: flex;
-            margin-bottom: 30px;
-            &__number--bg-orange {
-                @extend %numbers-of-list;
-            }
+            justify-content: space-between;
+            padding: 0px 75px 30px 65px;                     
             &__content {
-                &__headline {
-                    @extend %main-text-bold;
+                width: 280px;
+                &__headline {                    
                     padding-bottom: 15px;
-                }
-                &__description {
-                    @extend %main-text;
-                }
+                }                
             }            
         }
     }
