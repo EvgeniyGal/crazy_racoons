@@ -2,7 +2,7 @@
   background: $page-footer-bg;
 
   &__box {
-    padding: 3.8rem 1.8rem;
+    padding: 3.8rem 0;
     box-sizing: border-box;
     
     &__group {
@@ -82,7 +82,7 @@
   &__box {
     display: flex;
     justify-content: space-between;
-    padding: 0.7rem 1.8rem;
+    padding: 0.7rem 0;
     box-sizing: border-box;
     
     &__link {

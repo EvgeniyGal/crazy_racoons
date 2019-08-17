@@ -1,0 +1,45 @@
+.drp-section--offset {
+  margin-bottom: 3.8rem;
+}
+
+.drp-title-group {
+  display: inline-block;
+  margin-left: -1.4rem;
+  padding: 0.8rem 13rem 0 0;
+  box-sizing: border-box;
+
+  &--bot-offset {
+    margin-bottom: 3.2rem;
+  }
+}
+
+.drp-main-container {
+  &__item {
+    display: flex;
+
+    &:first-child {
+      margin-bottom: 4rem;
+    }
+
+    &:last-child {
+      flex-direction: column;
+      margin: 0 5rem 0 8rem;
+    }
+  }
+}
+
+.drp-btn {
+  width: 22rem;
+}
+
+.drp-title-ps {
+  margin-bottom: 1rem;
+}
+
+.drp-text-offset {
+  margin-bottom: 1.8rem;
+}
+
+.drp-thin-col {
+  padding-right: 3rem;
+}
