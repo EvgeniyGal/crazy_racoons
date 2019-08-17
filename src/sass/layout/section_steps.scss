@@ -1,0 +1,93 @@
+.section_steps{
+    margin-bottom: 52px;
+}
+.step_headline{
+    @extend %headline-text;
+    padding-bottom: 27px;
+    text-align: center;
+}
+
+.step_description{
+    @extend %secondary-text;
+    padding-bottom: 63px;
+        &::before {
+            content: '\2014';
+            margin-right: 10px;
+            font-size: 40px;
+            vertical-align: -40%;
+        }
+}
+
+.step_background{
+    position: relative;
+    top: 52px;
+}
+
+.step_hor_background, .step_vert_background{
+    position: absolute;
+    display: block;
+    line-height: 78px;
+    color: $secondary-color;
+    font-family: $main-font;
+    font-weight: 800;
+    opacity: 0.1;
+    text-transform: uppercase;
+}
+
+.step_hor_background{
+    font-size: 207px;
+}
+
+.step_vert_background{
+    transform: rotate(90deg);
+    font-size: 56px;
+    left: 66px;
+}
+
+.title_bgblack{
+    @extend %headline-reverse-text;
+}
+
+.step_number {
+    @extend %headline-text;
+    font-size: 16px;
+    padding-right: 22px;
+
+    &::after {
+        @extend %list-style-square-big-blue;
+    }
+}
+
+.step_list{
+    display: flex;
+    padding-bottom: 34px;
+    &:last-child{
+        padding-bottom: 48px;
+    }
+
+    &_content {
+        &__headline {
+            @extend %slogan-text;
+        }
+
+        &__description {
+            @extend %main-text;
+        }
+    }
+}
+
+.slesh_text{
+    display: flex;
+}
+
+.slesh::before{
+    content: '\2044';
+    color: #000;
+    font-size: 27px;
+    padding-right: 8px;
+    font-weight: bold;
+}
+
+.text_orange{
+    @extend %except-text;
+}
