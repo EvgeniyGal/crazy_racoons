@@ -48,7 +48,11 @@
         &__item {
             display: flex;
             justify-content: space-between;
-            padding: 0px 75px 30px 65px;                     
+            padding: 0px 75px 30px 65px; 
+            &__number--bg-orange {
+                transform: rotate(-90deg) translateX(-50%);
+                height: fit-content;                
+            }                    
             &__content {
                 width: 280px;
                 &__headline {                    
