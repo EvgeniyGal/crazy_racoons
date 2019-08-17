@@ -104,13 +104,15 @@
   background-color: $text-bg-color;
   line-height: 19.5px;
 }
-
+//вертикальная нумерация ul в оранжевой обвертке
 %numbers-of-list {
   font-family: $main-font;
   font-weight: 700;
   font-size: 13.5px;
   color: $main-color;
   background-color: $btn-main-color;
+  height: fit-content;
+  transform: rotate(90deg);
 }
 
 // и куда же без кнопочек (: обратите внимание, что последние три кнопки в макете меньше
