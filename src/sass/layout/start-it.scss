@@ -1,5 +1,4 @@
 .start-it-text {
-    @extend%main-text;
     color: $secondary-color;
     text-align: left;
     padding-right: 20px;
@@ -33,7 +32,6 @@
 }
 
 .start-it-subtitle {
-    @extend%slogan-text;
     font-size: 15px;
     line-height: 16.43px;
     padding-top: 45px;
@@ -48,25 +46,18 @@
 }
 
 .start-it__section-title {
-    @extend%headline-text;
     font-size: 20.5px;
     margin: 0 0 40px;
     padding: 0 86px;
     text-align: left;
 }
 
-.start-it__section-title span {
-    @extend%headline-reverse-text;
-}
-
 .start-it-subject {
-    @extend%slogan-text;
     text-align: left;
     margin-bottom: 20px;
 }
 
 .start-it-list {
-    @extend%main-text;
     list-style: none;
     text-align: left;
     padding: 0 22px 0 40px;
@@ -83,21 +74,18 @@
 }
 
 .start-it-list__item::before {
-    display: block;
-    content: '';
     position: absolute;
+    @extend%list-style-square-small-black;
     width: 8px;
     height: 8px;
     top: 7px;
     left: -15px;
-    background: $secondary-color;
 }
 .start-it-list__item span {
     font-weight: 700;
 }
 
 .start-it-excerpt {
-    @extend%except-text;
     padding: 0 80px;
     text-align: center;
     margin: 0 0 80px;

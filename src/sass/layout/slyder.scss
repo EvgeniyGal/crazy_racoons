@@ -41,7 +41,6 @@
 }
 
 .slyder-subtilte-top {
-    @extend%main-text-bold;
     color: $main-color;
     padding: 0 40px;
     text-align: center;
@@ -85,7 +84,6 @@
 }
 
 .slyder-subtilte {
-    @extend%main-text-bold;
     color: $main-color;
     text-transform: uppercase;
     text-align: left;
@@ -94,16 +92,11 @@
 }
 
 .slyder-text {
-    @extend%main-text;
     color: $dop-text-color;
     margin: 0 0 60px;
     padding: 0 40px;
     text-align: left;
 }
 
-.slyder a {
-    @extend%button-style;
-    padding: 20px 25px;
-}
 
 
