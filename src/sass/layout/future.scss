@@ -6,7 +6,6 @@
 }
 
 .future-title {
-    @extend%headline-reverse-text;
     padding: 0 100px;
     background: none;
     margin-bottom: 30px;
@@ -24,12 +23,10 @@
 }
 
 .future-subtitle {
-    @extend%secondary-text;
     margin: 0 0 15px;
 }
 
 .future-subtitle-last {
-    @extend%secondary-text;
     padding: 0 70px 0 110px;
     margin: 0 0 50px;
     position: relative;
@@ -47,7 +44,6 @@
 }
 
 .future-text {
-    @extend%main-text;
     margin: 0 0 50px;
 }
 
@@ -73,21 +69,12 @@
 }
 
 .future-list__future-item::before {
-    display: block;
-    content: '';
+    @extend%list-style-square-small-black;
     position: absolute;
-    width: 6px;
-    height: 5px;
     top: 7px;
     left: -25px;
-    background: $secondary-color;
 }
 
 .future-item-title {
-    @extend%slogan-text;
     margin-bottom: 20px;
-}
-
-.future-item-subtitle {
-    @extend%main-text;
 }
