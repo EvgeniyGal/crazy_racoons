@@ -4,15 +4,12 @@ img {
   height: auto;
 }
 .web-career {
-  @extend %main-text;
   margin-bottom: 44px;
   &__title {
-    @extend %headline-text;
     padding: 0 190px 0 75px;
   }
   &__description {
     padding: 0 55px 0 110px;
-    @extend %main-text-bold;
     color: $secondary-color;
     position: relative;
     margin-bottom: 25px;
@@ -31,7 +28,6 @@ img {
   &__text {
     padding-left: 73px;
     &--bold {
-      @extend %slogan-text;
       padding-left: 100px;
       position: relative;
       &::before {
