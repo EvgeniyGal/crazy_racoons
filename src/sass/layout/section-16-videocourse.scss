@@ -36,9 +36,12 @@
       list-style-type: none;
       text-align: left;
 
+      &__headline {
+        margin-bottom: 15px;
+      }
+
       &__headline--bg-black {
         @extend %slogan-reverse-text;
-        padding-bottom: 15px;
       }
 
       &__description {
