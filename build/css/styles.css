@@ -903,14 +903,7 @@ template {
 }
 
 .description,
-.step_list_content__description,
-.info_content__description,
-.training_h3__description,
-.goforit_h3__description,
-.article_description,
-.video-course-section__what-is-list__item__description,
-.video-course-section__what-you-get-list__item-desc__description,
-.bonus-section__item__description {
+.step_list_content__description {
   font-family: "Acrom", sans-serif;
   font-weight: 400;
   font-size: 13.5px;
@@ -918,9 +911,7 @@ template {
   line-height: 19.5px;
 }
 
-.description--bold,
-.info_content__headline,
-.video-course-section__what-you-get-list__item-desc__headline {
+.description--bold {
   font-family: "Acrom", sans-serif;
   font-weight: 700;
   font-size: 13.5px;
@@ -934,6 +925,7 @@ template {
   font-weight: 500;
   font-size: 13.5px;
   color: #ff6b08;
+  line-height: 1.5;
 }
 
 .slyder__page-title {
@@ -946,11 +938,7 @@ template {
 
 .section-headline,
 .step_headline,
-.step_number,
-.info_headline,
-.training_headline,
-.goforit_headline,
-.video-course-section__headline {
+.step_number {
   font-family: "Acrom", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -960,8 +948,7 @@ template {
 }
 
 .section-headline--reverse,
-.title_bgblack,
-.bonus-section__headline {
+.title_bgblack {
   font-family: "Acrom", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -971,11 +958,7 @@ template {
 }
 
 .slogan,
-.step_list_content__headline,
-.training_h3,
-.goforit_h3,
-.article_title,
-.video-course-section__what-you-get-headline {
+.step_list_content__headline {
   font-family: "Acrom", sans-serif;
   font-weight: 700;
   font-size: 13.5px;
@@ -984,8 +967,7 @@ template {
   line-height: 19.5px;
 }
 
-.slogan--reverse,
-.video-course-section__what-is-list__item__headline--bg-black {
+.slogan--reverse {
   font-family: "Acrom", sans-serif;
   font-weight: 700;
   font-size: 13.5px;
@@ -996,10 +978,7 @@ template {
 }
 
 .important-information,
-.step_description,
-.training_quote,
-.video-course-section__description,
-.bonus-section__description {
+.step_description {
   font-family: "Acrom", sans-serif;
   font-weight: 500;
   font-size: 13.5px;
@@ -1016,8 +995,7 @@ template {
   line-height: 19.5px;
 }
 
-.description--highlight-blue,
-.video-course-section__price__text--bg-blue {
+.description--highlight-blue {
   font-family: "Acrom", sans-serif;
   font-weight: 500;
   font-size: 13.5px;
@@ -1034,27 +1012,6 @@ template {
   color: #000000;
   text-transform: uppercase;
   line-height: 22px;
-}
-
-.bonus-section__item__description--bg-black {
-  font-family: "Acrom", sans-serif;
-  font-weight: 400;
-  font-size: 11.7px;
-  color: #ffffff;
-  line-height: 17.7px;
-  background-color: #000000;
-}
-
-.bonus-section__form__btn {
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  border: none;
-  font: 800 8px/12px "Acrom", sans-serif;
-  color: #ffffff;
-  background-color: #ff6b08;
-  box-shadow: 0px 5px 6px 0px rgba(196, 87, 15, 0.26);
-  padding: 8px 20px;
 }
 
 .list-number,
@@ -1123,7 +1080,6 @@ template {
 }
 
 .list-number-regular--big::after,
-.step_number::after,
 .bonus-section__item__list-style::after {
   content: '';
   display: block;
@@ -1160,7 +1116,7 @@ template {
 
 .opportunity-section__usually::before,
 .gain-section__text::before {
-  content: "\338";
+  content: '\338';
   position: absolute;
   color: #000000;
   font-weight: 800;
@@ -1209,6 +1165,15 @@ template {
   background-color: #ff6b08;
   width: 9px;
   height: 51px;
+}
+
+.description-reverse {
+  font-family: "Acrom", sans-serif;
+  font-weight: 400;
+  font-size: 13.5px;
+  color: #ffffff;
+  line-height: 19.5px;
+  background-color: #000000;
 }
 
 .list-number {
@@ -1384,7 +1349,6 @@ template {
 }
 
 .section_info {
-  margin: 0 auto;
   margin-bottom: 60px;
 }
 
@@ -1411,7 +1375,7 @@ template {
   padding-bottom: 15px;
 }
 
-.button {
+.info-button {
   width: 216px;
   margin: 40px auto 0;
 }
@@ -1460,16 +1424,17 @@ template {
   content: "";
   position: absolute;
   width: 80px;
-  height: 80px;
-  right: -75px;
-}
-
-.oon::before {
-  background: url(../../images/icons/icon-OON.svg);
+  height: 68px;
+  right: -15px;
+  background: url("../images/icon-OON.jpg") center/cover no-repeat;
 }
 
 .goforit_headline {
   padding-bottom: 37px;
+}
+
+.goforit_h3 {
+  padding-right: 60px;
 }
 
 .goforit_h3__description {
@@ -1490,16 +1455,18 @@ template {
   position: absolute;
   width: 45px;
   height: 140px;
-  right: -75px;
+  right: -5px;
 }
 
 .article_award2016::before {
-  background: url("../../images/icons/icon-winner1.svg");
+  background: url("/crazy_racoons/src/images/icon-winner-1.jpg") center/cover no-repeat;
 }
 
 .article_best2015::before,
 .article_best2016::before {
-  background: url("../../images/icons/icon-winner2.svg");
+  background: url("/crazy_racoons/src/images/icon-winner-2@1x.jpg") center/cover no-repeat;
+  width: 60px;
+  height: 114px;
 }
 
 .list_background {
@@ -1521,6 +1488,10 @@ template {
 
 .article_title {
   padding-bottom: 17px;
+}
+
+.article_description {
+  padding-right: 60px;
 }
 
 .baner__btn {
@@ -1911,8 +1882,8 @@ template {
   text-align: left;
 }
 
-.video-course-section__what-is-list__item__headline--bg-black {
-  padding-bottom: 15px;
+.video-course-section__what-is-list__item__headline {
+  margin-bottom: 15px;
 }
 
 .video-course-section__what-is-list__item__description {
@@ -1934,7 +1905,6 @@ template {
 }
 
 .video-course-section__what-you-get-list__item__number--bg-orange {
-  text-align: center;
   height: 14px;
   transform: rotate(-90deg) translate(-100%, -100%);
 }
@@ -2009,11 +1979,12 @@ template {
 }
 
 .bonus-section__list {
-  padding-left: 0;
+  padding: 0px 80px 0px 65px;
 }
 
 .bonus-section__item {
   display: flex;
+  justify-content: space-between;
   list-style-type: none;
   margin-bottom: 30px;
 }
@@ -2022,7 +1993,10 @@ template {
   font-size: 25px;
   line-height: 30px;
   transform: translateY(8%);
-  margin-right: 20px;
+}
+
+.bonus-section__item__text {
+  width: 250px;
 }
 
 .bonus-section__form {
@@ -2091,17 +2065,6 @@ template {
   margin-bottom: 35px;
 }
 
-.bonus-section__form__btn {
-  padding: 13px 22px;
-  font-size: 8px;
-  margin: 0px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-shadow: none;
-  transform: background-color 200ms linear, box-shadow 200ms linear;
-}
-
 .wrapper-slyder {
   background: #181c27 url("../images/baner-shadow-tablet.png") center/cover no-repeat;
 }
@@ -2141,7 +2104,7 @@ template {
   padding: 0 40px;
   text-align: center;
   margin: 0 0 35px;
-  letter-spacing: -.25px;
+  letter-spacing: -0.25px;
   text-transform: uppercase;
   position: relative;
 }
@@ -2177,6 +2140,7 @@ template {
   text-transform: uppercase;
   font-weight: 800;
   color: #000000;
+  opacity: 0.2;
 }
 
 .slyder-subtilte {
@@ -2286,11 +2250,12 @@ template {
   padding: 0 80px;
   text-align: center;
   margin: 0 0 80px;
+  line-height: 19.5px;
 }
 
 .facts-title {
   text-align: center;
-  margin: 0 0 45px;
+  margin: 0 0 40px;
 }
 
 .facts-subtitle {
@@ -2883,7 +2848,7 @@ img {
 }
 
 .web-career__text {
-  padding-left: 75px;
+  padding: 0 65px 0 75px;
 }
 
 .web-career__text--bold {
@@ -2897,7 +2862,20 @@ img {
   top: 7px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .goforit_oon::before {
+    background: url("../images/icon-OON@2x.jpg") center/cover no-repeat;
+  }
+
+  .article_award2016::before {
+    background: url("/crazy_racoons/src/images/icon-winner-1@2x.jpg") center/cover no-repeat;
+  }
+
+  .article_best2015::before,
+  .article_best2016::before {
+    background: url("/crazy_racoons/src/images/icon-winner-2@2x.jpg") center/cover no-repeat;
+  }
+
   .wrapper-slyder {
     background: #181c27 url("../images/baner-shadow-tablet@2x.png") center/cover no-repeat;
   }

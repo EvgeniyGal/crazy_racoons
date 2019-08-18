@@ -2,14 +2,12 @@
   margin-top: 80px;
 
   &__headline {
-    @extend %headline-reverse-text;
     text-align: center;
     margin-bottom: 20px;
   }
 
   &__description {
     display: flex;
-    @extend %secondary-text;
     text-align: left;
     padding: 0 15px;
     margin-bottom: 60px;
@@ -23,11 +21,12 @@
   }
 
   &__list {
-    padding-left: 0;
+    padding: 0px 80px 0px 65px;
   }
 
   &__item {
     display: flex;
+    justify-content: space-between;
     list-style-type: none;
     margin-bottom: 30px;
 
@@ -36,26 +35,21 @@
       font-size: 25px;
       line-height: 30px;
       transform: translateY(8%);
-      margin-right: 20px;
 
       &::after {
         @extend %list-style-square-big-blue;
       }
     }
 
+    &__text {
+      width: 250px;
+    }
+
     &__headline {
       @extend %headline-text-bonus;
-    }
-
-    &__description {
-      @extend %main-text;
-
-      &--bg-black {
-        @extend %headline-reverse-bonus-text;
       }
-    }
-  }
-
+    }    
+  
   &__form {
     box-sizing: border-box;
     width: 370px;
@@ -101,14 +95,14 @@
       }
     }
 
-    &__btn {
-      @extend %button-form;
-      padding: 13px 22px;
-      font-size: 8px;
-      margin: 0px;
-      width: fit-content;
-      box-shadow: none;
-      transform: background-color 200ms linear, box-shadow 200ms linear;
-    }
+    // &__btn {
+    //   @extend %button-form;
+    //   padding: 13px 22px;
+    //   font-size: 8px;
+    //   margin: 0px;
+    //   width: fit-content;
+    //   box-shadow: none;
+    //   transform: background-color 200ms linear, box-shadow 200ms linear;
+    // }
   }
 }

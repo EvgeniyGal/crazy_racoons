@@ -2,14 +2,12 @@
   text-align: center;
   padding: 0 105px;
 
-  &__headline {
-    @extend %headline-text;
+  &__headline {    
     margin-bottom: 20px;
   }
 
   &__description {
-    display: flex;
-    @extend %secondary-text;
+    display: flex;    
     text-align: left;
 
     &::before {
@@ -36,13 +34,11 @@
       list-style-type: none;
       text-align: left;
 
-      &__headline--bg-black {
-        @extend %slogan-reverse-text;
-        padding-bottom: 15px;
+      &__headline {
+        margin-bottom: 15px;
       }
 
-      &__description {
-        @extend %main-text;
+      &__description {        
         margin-bottom: 40px;
       }
     }
@@ -50,10 +46,6 @@
 
   &__what-you-get {
     padding: 0 55px;
-
-    &-headline {
-      @extend %slogan-text;
-    }
   }
 
   &__what-you-get-list {
@@ -65,20 +57,17 @@
       list-style-type: none;
 
       &__number--bg-orange {
-        @extend %numbers-of-list;
-        text-align: center;
+        @extend %numbers-of-list;        
         height: 14px;
         transform: rotate(-90deg) translate(-100%, -100%);
       }
 
       &-desc {
         &__headline {
-          @extend %main-text-bold;
           margin-bottom: 5px;
         }
 
         &__description {
-          @extend %main-text;
           margin: 0;
         }
       }
@@ -97,7 +86,6 @@
       padding-top: 25px;
 
       &--bg-blue {
-        @extend %highlited-text;
         font-size: 17px;
         line-height: 30px;
       }
