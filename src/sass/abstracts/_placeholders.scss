@@ -161,11 +161,10 @@
   background-color: $btn-main-color;
   padding-top: 20px;
   padding-bottom: 20px;
-  box-shadow: $btn-box-shadow;
-  transition: background-color 100ms linear, box-shadow 100ms linear;
+  border: none;  
+  transition: box-shadow 200ms linear;
   &:hover {
-    background-color: $btn-hover-color;
-    box-shadow: $btn-box-shadow-hover;
+    box-shadow: $btn-box-shadow;    
   }  
 }
 
