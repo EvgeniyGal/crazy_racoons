@@ -6,10 +6,13 @@ img {
 .web-career {
   margin-bottom: 44px;
   &__title {
-    padding: 0 190px 0 75px;
+    padding-left: 75px;
+    & span {
+      display: block;
+    }
   }
   &__description {
-    padding: 0 55px 0 110px;
+    padding: 0 60px 0 110px;
     color: $secondary-color;
     position: relative;
     margin-bottom: 25px;
@@ -26,7 +29,7 @@ img {
     margin-bottom: 25px;
   }
   &__text {
-    padding-left: 73px;
+    padding-left: 75px;
     &--bold {
       padding-left: 100px;
       position: relative;

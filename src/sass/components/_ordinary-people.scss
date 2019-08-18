@@ -1,25 +1,29 @@
 .ordinary-people {
-  padding: 0 92px;
   margin-bottom: 54px;
   &__title {
+    & span {
+      display: block;
+    }
     margin-bottom: 38px;
+    padding-left: 35px;
   }
   &__description {
     margin-bottom: 36px;
+    padding-left: 35px;
     color: $secondary-color;
     &--line {
       &::before {
         @extend %dash-big;
         position: absolute;
-        left: 0;
+        left: 0px;
         top: 13px;
       }
     }
   }
-  &__title,
-  &__description {
-    padding-left: 36px;
-    position: relative;
+  &__header {
+    & p {
+      position: relative;
+    }
   }
 }
 
@@ -53,8 +57,6 @@
   justify-content: space-between;
 }
 .pagination {
-  margin: 0;
-  padding: 0;
   padding-left: 25px;
   display: flex;
   list-style: none;

@@ -1,30 +1,39 @@
 .warn-section {
-  padding: 0 68px;
   margin-bottom: 66px;
   &__title {
+    & span {
+      display: block;
+    }
     margin-bottom: 20px;
+    padding-left: 60px;
   }
   &__description {
     margin-bottom: 38px;
+    padding-left: 60px;
     color: $secondary-color;
+    & span {
+      display: block;
+    }
     &--line {
       &::before {
         @extend %dash-big;
         position: absolute;
-        left: 20px;
+        left: 25px;
         top: 13px;
       }
     }
   }
-  &__title,
-  &__description {
-    padding: 0 60px;
-    position: relative;
+  &__header {
+    width: 340px;
+    margin: 0 auto;
+    & p {
+      position: relative;
+    }
   }
   &__list {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    width: 340px;
+    margin: 0 auto;
   }
   &__item {
     margin-bottom: 15px;
