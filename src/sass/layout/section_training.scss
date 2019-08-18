@@ -43,8 +43,8 @@
     }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
     .goforit_oon{
         &::before{
             background: url("../images/icon-OON@2x.jpg") center/cover no-repeat;
@@ -82,8 +82,8 @@
     background: url("/crazy_racoons/src/images/icon-winner-1.jpg") center/cover no-repeat;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .article_award2016::before {
       background: url("/crazy_racoons/src/images/icon-winner-1@2x.jpg") center/cover no-repeat;
     }
@@ -95,8 +95,8 @@
     height: 114px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
     .article_best2015::before,
     .article_best2016::before {
         background: url("/crazy_racoons/src/images/icon-winner-2@2x.jpg") center/cover no-repeat;
