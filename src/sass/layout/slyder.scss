@@ -1,103 +1,104 @@
 .wrapper-slyder {
-    background: $baner-bg-color url("../images/baner-shadow-tablet.png") center/cover no-repeat;
+  background: $baner-bg-color url('../images/baner-shadow-tablet.png')
+    center/cover no-repeat;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-    .wrapper-slyder {
-      background: $baner-bg-color url("../images/baner-shadow-tablet@2x.png") center/cover no-repeat;
-    }
+@media (min-resolution: 192dpi), (min-resolution: 2dppx)
+ {
+  .wrapper-slyder {
+    background: $baner-bg-color url('../images/baner-shadow-tablet@2x.png')
+      center/cover no-repeat;
+  }
 }
 
 .top-line {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 0 25px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 25px;
 }
 
 .site-logo {
-    display: inline-block;
-    width: 66px;
-    height: 23px;
+  display: inline-block;
+  width: 66px;
+  height: 23px;
 }
 
 .site-menu {
-    display: inline-block;
-    width: 27px;
-    height: 16.5px;
-    fill: $main-color;
+  display: inline-block;
+  width: 27px;
+  height: 16.5px;
+  fill: $main-color;
 }
 
 .slyder {
-    text-align: center;
-    padding: 0 0 60px;
+  text-align: center;
+  padding: 0 0 60px;
 }
 
 .slyder__page-title {
-    @extend %page-headline-text;
-    padding: 0 100px;
-    margin: 0 0 45px;
-    line-height: 39px;
+  @extend %page-headline-text;
+  padding: 0 100px;
+  margin: 0 0 45px;
+  line-height: 39px;
 }
 
 .slyder-subtilte-top {
-    color: $main-color;
-    padding: 0 40px;
-    text-align: center;
-    margin: 0 0 35px;
-    letter-spacing: -.25px;
-    text-transform: uppercase;
-    position: relative;
+  color: $main-color;
+  padding: 0 40px;
+  text-align: center;
+  margin: 0 0 35px;
+  letter-spacing: -0.25px;
+  text-transform: uppercase;
+  position: relative;
 }
 
 .slyder-subtilte-top::before {
-    position: absolute;
-    content: '<';
-    display: block;
-    color: $btn-hover-color;
-    font-weight: 700;
-    font-size: 17px;
-    left: 7%;
-    font-weight: 15px;
+  position: absolute;
+  content: '<';
+  display: block;
+  color: $btn-hover-color;
+  font-weight: 700;
+  font-size: 17px;
+  left: 7%;
+  font-weight: 15px;
 }
 
 .slyder-subtilte-top::after {
-    position: absolute;
-    content: '/>';
-    color: $btn-hover-color;
-    display: block;
-    font-weight: 700;
-    font-size: 17px;
-    right: 3%;
-    bottom: 3%;
+  position: absolute;
+  content: '/>';
+  color: $btn-hover-color;
+  display: block;
+  font-weight: 700;
+  font-size: 17px;
+  right: 3%;
+  bottom: 3%;
 }
 
 .slyder-logo {
-    margin: 0 0 45px;
-    text-align: center;
-    font-family: $main-font;
-    line-height: 70px;
-    font-size: 120px;
-    text-transform: uppercase;
-    font-weight: 800;
-    color: $secondary-color;
-    opacity: .4;
+
+  margin: 0 0 45px;
+  text-align: center;
+  font-family: $main-font;
+  line-height: 70px;
+  font-size: 120px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: $secondary-color;
+  opacity: 0.2;
+
 }
 
 .slyder-subtilte {
-    color: $main-color;
-    text-transform: uppercase;
-    text-align: left;
-    padding: 0 40px;
-    margin: 0 0 10px;
+  color: $main-color;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 0 40px;
+  margin: 0 0 10px;
 }
 
 .slyder-text {
-    color: $dop-text-color;
-    margin: 0 0 60px;
-    padding: 0 40px;
-    text-align: left;
+  color: $dop-text-color;
+  margin: 0 0 60px;
+  padding: 0 40px;
+  text-align: left;
 }
-
-
-
