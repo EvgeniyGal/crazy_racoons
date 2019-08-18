@@ -19,9 +19,11 @@
   padding: 1.4rem;
   font: 800 1rem $main-font;
   font-size: 1rem;
+  text-transform: uppercase;
   text-align: center;
   box-sizing: border-box;
   border: none;
+  transition: all .3s linear;
   
   &:hover {
     box-shadow: $btn-box-shadow;
