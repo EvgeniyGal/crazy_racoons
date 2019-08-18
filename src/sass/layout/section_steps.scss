@@ -55,6 +55,7 @@
 
     &::after {
         @extend %list-style-square-big-blue;
+        left: 25%;
     }
 }
 
