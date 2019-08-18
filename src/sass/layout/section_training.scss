@@ -1,0 +1,113 @@
+.section_training_now{
+    padding-bottom: 37px;
+}
+.training_title{
+    margin: 0 auto;
+    width: 376px;
+}
+
+.training_headline{
+    @extend %headline-text;
+    padding-bottom: 24px;
+}
+
+.training_h3{
+    @extend %slogan-text;
+    padding-bottom: 18px;
+    &__description{
+        @extend %main-text;
+        padding-bottom: 42px;
+    }
+}
+
+.training_quote{
+    padding-top: 63px;
+    @extend %secondary-text;
+        &::before {
+            content: '\2014';
+            margin-right: 10px;
+            font-size: 40px;
+            vertical-align: -40%;
+        }
+}
+
+.goforit_list{
+    padding-bottom: 60px;
+}
+
+.goforit_oon{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        right: -75px;
+    }
+}
+
+.oon::before{
+    background: url(../../images/icons/icon-OON.svg);
+}
+
+.goforit_headline{
+    @extend %headline-text;
+    padding-bottom: 37px;
+}
+
+.goforit_h3{
+    @extend %slogan-text;
+    &__description{
+        @extend %main-text;
+        padding-bottom: 44px;
+    }
+}
+
+.art{
+    padding-bottom: 47px;
+    position: relative;
+    &:last-child{
+        padding-bottom: 0;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 45px;
+        height: 140px;
+        right: -75px;
+    }
+}
+
+.article_award2016::before{
+    background: url("../../images/icons/icon-winner1.svg");
+}
+
+.article_best2015::before, .article_best2016::before{
+    background: url("../../images/icons/icon-winner2.svg");
+}
+
+.list_background{
+    position: relative;
+
+    &__number{
+        position: absolute;
+        display: block;
+        line-height: 78px;
+        color: $secondary-color;
+        font-family: $main-font;
+        font-weight: 800;
+        opacity: 0.1;
+        transform: rotate(270deg);
+        font-size: 38px;
+        right: 80px;
+    }
+}
+
+.article_title{
+    @extend %slogan-text;
+    padding-bottom: 17px;
+}
+
+.article_description{
+    @extend %main-text;
+}
