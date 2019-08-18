@@ -50,13 +50,7 @@
 
 .step_number {
     @extend %headline-text;
-    font-size: 16px;
-    // padding-right: 22px;    
-
-    &::after {
-        @extend %list-style-square-big-blue;
-        left: 25%;
-    }
+    font-size: 16px;    
 }
 
 .step_list {

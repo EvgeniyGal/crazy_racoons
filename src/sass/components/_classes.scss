@@ -3,6 +3,15 @@
     @extend %main-text;
 }
 
+.description-reverse {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 13.5px;
+  color: $main-color;
+  line-height: 19.5px;
+  background-color: $secondary-color;
+}
+
 //типовой текст жирный
 .description--bold {
     @extend %main-text-bold;
