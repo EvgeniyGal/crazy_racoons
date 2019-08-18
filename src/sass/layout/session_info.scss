@@ -1,0 +1,37 @@
+.section_info{
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.info_list{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.info_headline{
+    @extend %headline-text;
+    padding-top: 25px;
+    padding-bottom: 36px;
+    font-size: 10px;
+    line-height: 16px;
+}
+
+.info_number--bgorange{
+    @extend %numbers-of-list;
+}
+
+.info_content {
+    &__headline {
+        @extend %main-text-bold;
+        padding-bottom: 15px;
+    }
+    &__description {
+        @extend %main-text;
+    }
+}
+
+.button{
+    @extend %button-style;
+    width: 216px;
+    margin: 40px auto 0;
+}

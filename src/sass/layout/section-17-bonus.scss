@@ -1,0 +1,119 @@
+.bonus-section {
+  margin-top: 80px;
+
+  &__headline {
+    @extend %headline-reverse-text;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    display: flex;
+    @extend %secondary-text;
+    text-align: left;
+    padding: 0 15px;
+    margin-bottom: 60px;
+
+    &::before {
+      @extend %dash-big;
+      width: 40px;
+      transform: translateY(500%);
+      margin-right: 20px;
+    }
+  }
+
+  &__list {
+    padding-left: 0;
+  }
+
+  &__item {
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 30px;
+
+    &__list-style {
+      @extend %headline-text-bonus;
+      font-size: 25px;
+      line-height: 30px;
+      transform: translateY(8%);
+      margin-right: 20px;
+
+      &::after {
+        @extend %list-style-square-big-blue;
+      }
+    }
+
+    &__headline {
+      @extend %headline-text-bonus;
+    }
+
+    &__description {
+      @extend %main-text;
+
+      &--bg-black {
+        @extend %headline-reverse-bonus-text;
+      }
+    }
+  }
+
+  &__form {
+    box-sizing: border-box;
+    width: 370px;
+    margin: 0 auto;
+    padding: 65px;
+    box-shadow: $form-box-shadow;
+    margin-bottom: 60px;
+
+    &__fieldset {
+      width: 242px;
+      border: none;
+      font: 400 10px/12px $main-font;
+      color: $secondary-color;
+      margin-bottom: 10px;
+    }
+
+    &__label {
+      font: 700 8px/12px $main-font;
+      color: $form-main-color;
+      margin-bottom: 10px;
+    }
+
+    &__input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $form-main-color;
+      margin-bottom: 20px;
+      padding: 10px 0;
+      transform: border-bottom 200ms linear;
+
+      &:active {
+        border: none;
+        border-bottom: 1px solid $btn-main-color;
+      }
+
+      &::placeholder {
+        font: 400 10px/12px $main-font;
+        color: $secondary-color;
+      }
+
+      &:last-child {
+        margin-bottom: 35px;
+      }
+    }
+
+    &__btn {
+      @extend %button-form;
+      transform: background-color 200ms linear, box-shadow 200ms linear;
+
+      &:hover {
+        background-color: $btn-hover-color;
+        box-shadow: $btn-box-shadow-hover;
+      }
+
+      &:active {
+        background-color: $btn-active-color;
+        box-shadow: $btn-box-shadow-active;
+      }
+    }
+  }
+}
