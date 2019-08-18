@@ -6,24 +6,26 @@
     background-color: $btn-active-color;
     box-shadow: $btn-box-shadow-active;
   }
+
   &:hover {
     background-color: $btn-hover-color;
     box-shadow: $btn-box-shadow-hover;
   }
+}
 
-  .footer__btn {
-    border: 0.6px solid $footer-btn-border-color;
-    background-color: transparent;
-    box-shadow: none;
-  }
-
-  &:active {
-    background-color: $footer-btn-active-color;
-    box-shadow: none;
-  }
-
+.sections-btn {
+  background-color: $btn-main-color;
+  color: $main-color;
+  padding: 1.4rem;
+  font: 800 1rem $main-font;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  box-sizing: border-box;
+  border: none;
+  transition: all .3s linear;
+  
   &:hover {
-    background-color: $btn-hover-color;
-    box-shadow: none;
+    box-shadow: $btn-box-shadow;
   }
 }

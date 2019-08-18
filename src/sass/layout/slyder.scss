@@ -2,6 +2,13 @@
     background: $baner-bg-color url("../images/baner-shadow-tablet.png") center/cover no-repeat;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .wrapper-slyder {
+      background: $baner-bg-color url("../images/baner-shadow-tablet@2x.png") center/cover no-repeat;
+    }
+}
+
 .top-line {
     display: flex;
     justify-content: space-between;
@@ -12,7 +19,6 @@
     display: inline-block;
     width: 66px;
     height: 23px;
-    padding-left: 18px;
 }
 
 .site-menu {
@@ -20,7 +26,6 @@
     width: 27px;
     height: 16.5px;
     fill: $main-color;
-    padding-right: 18px;
 }
 
 .slyder {
@@ -30,44 +35,40 @@
 
 .slyder__page-title {
     @extend %page-headline-text;
-    padding: 0 117px;
+    padding: 0 100px;
     margin: 0 0 45px;
     line-height: 39px;
 }
 
-.slyder-top {
-    position: relative;
-    left: 0;
-    right: 0;
-}
 .slyder-subtilte-top {
-    @extend%main-text-bold;
     color: $main-color;
-    padding: 0 50px;
+    padding: 0 40px;
     text-align: center;
     margin: 0 0 35px;
     letter-spacing: -.25px;
     text-transform: uppercase;
+    position: relative;
 }
 
-.left::before {
+.slyder-subtilte-top::before {
     position: absolute;
-    content: '\003C';
+    content: '<';
     display: block;
     color: $btn-hover-color;
     font-weight: 700;
-    font-size: 13.5px;
+    font-size: 17px;
     left: 7%;
+    font-weight: 15px;
 }
 
-.right::after {
+.slyder-subtilte-top::after {
     position: absolute;
-    content: '\338  \003E';
+    content: '/>';
     color: $btn-hover-color;
     display: block;
     font-weight: 700;
-    font-size: 13.5px;
-    right: 5%;
+    font-size: 17px;
+    right: 3%;
     bottom: 3%;
 }
 
@@ -83,42 +84,19 @@
 }
 
 .slyder-subtilte {
-    @extend%main-text-bold;
     color: $main-color;
     text-transform: uppercase;
     text-align: left;
-    padding: 0 50px;
+    padding: 0 40px;
     margin: 0 0 10px;
 }
 
 .slyder-text {
-    @extend%main-text;
     color: $dop-text-color;
     margin: 0 0 60px;
-    padding: 0 50px;
+    padding: 0 40px;
     text-align: left;
 }
 
-.slyder-text::before {
-    content: '\338';
-    margin-right: 5px;
-}
-
-.slyder-text::after {
-  content: '\0024 \0024 \0024 \002e';
-  margin-left: 10px;
-}
-
-.slyder a {
-    padding: 20px 25px;
-    text-align: center;
-    font-family: $main-font;
-    font-weight: 800;
-    font-size: 11px;
-    color: $main-color;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: $btn-main-color;
-}
 
 

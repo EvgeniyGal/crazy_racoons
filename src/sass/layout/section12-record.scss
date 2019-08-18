@@ -1,36 +1,36 @@
 .record-section {
-    padding-top: 20px;
+    margin-bottom: 40px;    
     &__headline {
-        @extend %headline-text;
-        margin-bottom: 30px;        
+        padding: 0px 75px 30px 90px;               
     }
-    &__text {
-        @extend %secondary-text;
-        margin-bottom: 45px;
-        &--bgblue {
-            @extend %highlited-text;
-        }
+    &__text { 
+        padding: 0px 75px 45px 115px;        
+        position: relative;        
         &::before {
             @extend %dash-small;
+            position: absolute;
+            left: 90px; 
+            top: 10px;           
         }
     }
     &__image {
         display: block;
         margin: 0px auto 35px;
+        width: auto;
     }
     &__achievements-list {
         list-style: none;
         &__item {
-            margin-bottom: 30px;
-            &__headline {
-                @extend %slogan-text;
-            }
-            &__description {
-                @extend %main-text;
+            padding: 0px 75px 30px 95px;
+            position: relative;            
+            &__description {                
                 padding-top: 10px;
             }
             &::before {
                 @extend %list-style-square-small-black;
+                position: absolute;
+                left: 78px;
+                top: 6px;
             }
         }
     }

@@ -1,6 +1,7 @@
 /*
    Import partials below
 */
+@import './base/reset';
 @import './base/normalize';
 @import './base/fonts';
 @import './abstracts/variables';
@@ -13,22 +14,35 @@
 @import './components/main-menu';
 @import './components/sections-line';
 @import './components/sections-lines';
+
+@import './components/classes';
+
+@import './components/text-content';
+
 @import './layout/forms';
 @import './layout/header';
-@import './layout/footer';
 @import './layout/navigation';
 @import './layout/sections';
+
+@import './layout/section_steps';
+@import './layout/section_info';
+@import './layout/section_training';
+
 @import './components/buttons';
 @import './components/ordinary-people.scss';
 @import './layout/section13-leading';
 @import './layout/section12-record';
 @import './layout/section14-opportunity';
 @import './layout/section15-gain';
-
+@import './layout/section-16-videocourse';
+@import './layout/section-17-bonus';
 @import './layout/slyder';
 @import './layout/start-it';
 @import './layout/facts';
 @import './layout/future';
+@import './layout/important';
+@import './layout/do-reg-pay.scss';
+@import './layout/footer';
 
 @import './components/warn-section';
 @import './components/so-many-people.scss';

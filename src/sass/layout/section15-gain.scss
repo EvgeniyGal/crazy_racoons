@@ -1,37 +1,30 @@
-.gain-section {
-    padding-top: 25px;
-    padding-bottom: 48px;
+.gain-section {    
+    margin-bottom: 48px;
     &__headline {
-        @extend %headline-text;
-        margin-bottom: 50px;
+        padding: 0px 115px 50px 115px;        
     }
     &__get-list {
         list-style: none;
         &__item {
+            padding: 0px 75px 30px 75px;
             display: flex;
-            margin-bottom: 30px;
-            &__number {
-                @extend %headline-text;
-                font-size: 16px;
-                &::after {
-                    @extend %list-style-square-small-blue;
-                }
-            }
+            justify-content: space-between;                    
             &__content {
-                &__headline {
-                    @extend %slogan-text;
-                }
-                &__description {
-                    @extend %main-text;
-                }
-            }            
+                width: 250px;
+            }                       
         }
     }
-    &__text {
-        @extend %except-text;
+    &__text {     
+        padding: 0px 115px 35px 150px;   
         margin-bottom: 35px;
+        position: relative;
+        &::before {
+            @extend %slash;
+            left: 130px;
+        }
     }
     &__button {
-        @extend %button-style;
+        padding-right: 27px;
+        padding-left: 27px;
     }
 }

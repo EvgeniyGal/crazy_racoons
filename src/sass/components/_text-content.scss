@@ -1,0 +1,45 @@
+.sections-title {
+  font: 800 1.8rem/1.33 $main-font;
+  text-transform: uppercase;
+  color: $main-text-dark;
+
+  &--center {
+    text-align: center;
+  }
+
+  &__descr {
+    font: 500 1.35rem/1.44 $main-font;
+    color: $main-text-dark;
+  }
+}
+
+.bg-deco-text-vert {
+  display: inline-block;
+  font: 800 10.2rem $main-font;
+  writing-mode: vertical-rl;
+  color: $bg-decor-text;
+}
+
+.content-text {
+  font: 500 1.35rem/1.44 $main-font;
+  color: $main-text-color;
+
+  &--bg-cold {
+    color: $secondary-color;
+    background-color: $text-bg-color;
+  }
+
+  &--bold {
+    font: 700 1.35rem/1.44 $main-font;
+    color: $secondary-color;
+  }
+
+  &--colored {
+    font: 500 1.35rem/1.44 $main-font;
+    color: $content-text-colored;
+  }
+
+  &--al-right {
+    text-align: right;
+  }
+}
