@@ -1,13 +1,10 @@
 .warn-section {
   padding: 0 68px;
-  @extend %main-text;
   margin-bottom: 66px;
   &__title {
-    @extend %headline-text;
     margin-bottom: 20px;
   }
   &__description {
-    @extend %main-text-bold;
     margin-bottom: 38px;
     color: $secondary-color;
     &--line {
@@ -45,7 +42,6 @@
       }
     }
     &--slogan {
-      @extend %slogan-text;
       display: block;
     }
   }

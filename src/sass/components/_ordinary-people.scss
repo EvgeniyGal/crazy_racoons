@@ -1,13 +1,10 @@
 .ordinary-people {
   padding: 0 92px;
-  @extend %main-text;
   margin-bottom: 54px;
   &__title {
-    @extend %headline-text;
     margin-bottom: 38px;
   }
   &__description {
-    @extend %main-text-bold;
     margin-bottom: 36px;
     color: $secondary-color;
     &--line {
@@ -23,9 +20,6 @@
   &__description {
     padding-left: 36px;
     position: relative;
-  }
-  &__description--reverse {
-    @extend %secondary-reverse-text;
   }
 }
 
@@ -47,7 +41,6 @@
     padding: 20px 35px 20px 92px;
   }
   &__name {
-    @extend %slogan-text;
     font-size: 6px;
     line-height: 9px;
   }
@@ -70,7 +63,6 @@
   }
   &__link {
     text-decoration: none;
-    @extend %slogan-text;
     font-size: 6px;
     &--active {
       &:hover,
