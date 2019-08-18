@@ -17,7 +17,8 @@
 }
 
 .info_number--bgorange{
-    @extend %numbers-of-list;
+    transform: rotate(-90deg) translateX(-50%);
+    height: fit-content;
 }
 
 .info_content {
