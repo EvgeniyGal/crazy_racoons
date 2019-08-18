@@ -4,6 +4,12 @@
   font-size: 13.5px;
   color: $main-text-color;
   line-height: 19.5px;
+  @media screen and (min-width: 768px) {
+    font-size: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 9px;
+  }
 }
 
 %main-text-bold {
@@ -12,6 +18,12 @@
   font-size: 13.5px;
   color: $secondary-color;
   line-height: 19.5px;
+  @media screen and (min-width: 768px) {
+    font-size: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 9px;
+  }
 }
 
 //оранжевый текст
@@ -21,6 +33,9 @@
   font-size: 13.5px;
   color: $btn-main-color;
   line-height: 1.5;
+  @media screen and (min-width: 768px) {
+    font-size: 10px;
+  }  
 }
 
 // для h1
@@ -30,6 +45,12 @@
   font-size: 30px;
   color: $main-color;
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    font-size: 45px;    
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 50px;
+  }
 }
 
 // для h2 по всей странице, для первого необходимо вручную прописать 20,5px размер
@@ -40,6 +61,13 @@
   color: $secondary-color;
   text-transform: uppercase;
   line-height: 24px;
+  @media screen and (min-width: 768px) {
+    font-size: 27px;
+    line-height: 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
 }
 
 %headline-reverse-text {
@@ -49,6 +77,13 @@
   color: $main-color;
   text-transform: uppercase;
   background-color: $secondary-color;
+  @media screen and (min-width: 768px) {
+    font-size: 27px;
+    line-height: 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
 }
 
 // текст в верхнем регистре
@@ -59,6 +94,12 @@
   color: $secondary-color;
   text-transform: uppercase;
   line-height: 19.5px;
+  @media screen and (min-width: 768px) {
+    font-size: 9px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 10px;
+  }
 }
 
 %slogan-reverse-text {
@@ -69,6 +110,12 @@
   text-transform: uppercase;
   background-color: $secondary-color;
   line-height: 19.5px;
+  @media screen and (min-width: 768px) {
+    font-size: 9px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 10px;
+  }
 }
 
 %slogan-for-slider-text {
@@ -78,6 +125,12 @@
   color: $main-color;
   text-transform: uppercase;
   line-height: 19.5px;
+  @media screen and (min-width: 768px) {
+    font-size: 9px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 10px;
+  }
 }
 
 %secondary-text {
@@ -86,6 +139,12 @@
   font-size: 13.5px;
   color: $secondary-color;
   line-height: 19.5px;
+  @media screen and (min-width: 768px) {
+    font-size: 9px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 10px;
+  }
 }
 
 %secondary-reverse-text {
@@ -95,6 +154,12 @@
   color: $main-color;
   background-color: $secondary-color;
   line-height: 19.5px;
+  @media screen and (min-width: 768px) {
+    font-size: 9px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 10px;
+  }
 }
 
 %highlited-text {
@@ -104,6 +169,12 @@
   color: $secondary-color;
   background-color: $text-bg-color;
   line-height: 19.5px;
+  @media screen and (min-width: 768px) {
+    font-size: 9px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 10px;
+  }
 }
 
 %headline-text-bonus {
@@ -113,6 +184,12 @@
   color: $secondary-color;
   text-transform: uppercase;
   line-height: 22px;
+  @media screen and (min-width: 768px) {
+    font-size: 9px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 10px;
+  }
 }
 
 %headline-reverse-bonus-text {
@@ -122,19 +199,25 @@
   color: $main-color;
   line-height: 17.7px;
   background-color: $secondary-color;
+  @media screen and (min-width: 768px) {
+    font-size: 9px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 10px;
+  }
 }
 
-%button-form {
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  border: none;
-  font: 800 8px/12px $main-font;
-  color: $main-color;
-  background-color: $btn-main-color;
-  box-shadow: $btn-box-shadow;
-  padding: 8px 20px;
-}
+// %button-form {
+//   display: block;
+//   text-align: center;
+//   text-transform: uppercase;
+//   border: none;
+//   font: 800 8px/12px $main-font;
+//   color: $main-color;
+//   background-color: $btn-main-color;
+//   box-shadow: $btn-box-shadow;
+//   padding: 8px 20px;
+// }
 
 //вертикальная нумерация ul в оранжевой обвертке
 %numbers-of-list {
@@ -144,6 +227,9 @@
   color: $main-color;
   background-color: $btn-main-color;
   white-space: nowrap;
+  @media screen and (min-width: 768px) {
+    font-size: 6px;    
+  }  
 }
 
 // и куда же без кнопочек (: обратите внимание, что последние три кнопки в макете меньше
@@ -166,6 +252,12 @@
   &:hover {
     box-shadow: $btn-box-shadow;
   }
+  @media screen and (min-width: 768px) {
+    font-size: 7px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 7.5px;
+  }
 }
 
 %list-style-square-small-black {
@@ -174,6 +266,14 @@
   width: 6px;
   height: 6px;
   background-color: $secondary-color;
+  @media screen and (min-width: 768px) {
+    width: 7px;
+    height: 7px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 7.5px;
+    height: 7.5px;
+  }
 }
 
 %list-style-square-big-black {
@@ -182,6 +282,14 @@
   width: 10px;
   height: 10px;
   background-color: $secondary-color;
+  @media screen and (min-width: 768px) {
+    width: 7px;
+    height: 7px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 7.5px;
+    height: 7.5px;
+  }
 }
 
 %list-style-square-small-blue {
@@ -193,6 +301,14 @@
   position: absolute;
   left: 100%;
   transform: translate(-100%);
+  @media screen and (min-width: 768px) {
+    width: 7px;
+    height: 7px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 7.5px;
+    height: 7.5px;
+  }  
 }
 
 %list-style-square-big-blue {
@@ -204,6 +320,14 @@
   position: absolute;
   left: 100%;
   transform: translate(-100%);
+  @media screen and (min-width: 768px) {
+    width: 7px;
+    height: 7px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 7.5px;
+    height: 7.5px;
+  }
 }
 
 %list-style-square-big-orange {
@@ -212,6 +336,14 @@
   width: 10px;
   height: 10px;
   background-color: $btn-main-color;
+  @media screen and (min-width: 768px) {
+    width: 28px;
+    height: 3px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 31px;
+    height: 3.5px;
+  }
 }
 
 %dash-small {
@@ -220,6 +352,14 @@
   width: 15px;
   height: 3px;
   background-color: $secondary-color;
+  @media screen and (min-width: 768px) {
+    width: 28px;
+    height: 3px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 31px;
+    height: 3.5px;
+  }
 }
 
 %dash-big {
@@ -228,6 +368,14 @@
   width: 20px;
   height: 2px;
   background-color: $secondary-color;
+  @media screen and (min-width: 768px) {
+    width: 28px;
+    height: 3px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 31px;
+    height: 3.5px;
+  }
 }
 
 %slash {
@@ -236,4 +384,10 @@
   color: $secondary-color;
   font-weight: 800;
   font-size: 24px;
+  @media screen and (min-width: 768px) {
+    font-size: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 60px;
+  }
 }
