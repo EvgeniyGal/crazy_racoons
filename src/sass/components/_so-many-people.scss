@@ -7,12 +7,14 @@ img {
   margin-bottom: 30px;
   &__title {
     margin-bottom: 10px;
-    padding-right: 190px;
   }
   &__description {
     margin-bottom: 32px;
     color: $secondary-color;
     padding-right: 35px;
+    & span {
+      display: block;
+    }
     &--line {
       &::before {
         @extend %dash-big;
@@ -35,6 +37,17 @@ img {
     margin-bottom: 40px;
     &--reverse {
       margin: 0 0 3px 0;
+    }
+    &--header {
+      margin-bottom: 15px;
+    }
+    & .description--bold {
+      margin-bottom: 10px;
+    }
+  }
+  &__header {
+    & span {
+      display: block;
     }
   }
 }
