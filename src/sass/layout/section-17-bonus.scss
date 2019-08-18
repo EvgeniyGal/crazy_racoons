@@ -103,17 +103,12 @@
 
     &__btn {
       @extend %button-form;
+      padding: 13px 22px;
+      font-size: 8px;
+      margin: 0px;
+      width: fit-content;
+      box-shadow: none;
       transform: background-color 200ms linear, box-shadow 200ms linear;
-
-      &:hover {
-        background-color: $btn-hover-color;
-        box-shadow: $btn-box-shadow-hover;
-      }
-
-      &:active {
-        background-color: $btn-active-color;
-        box-shadow: $btn-box-shadow-active;
-      }
     }
   }
 }
