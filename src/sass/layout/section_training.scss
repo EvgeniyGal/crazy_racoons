@@ -7,22 +7,18 @@
 }
 
 .training_headline{
-    @extend %headline-text;
     padding-bottom: 24px;
 }
 
 .training_h3{
-    @extend %slogan-text;
     padding-bottom: 18px;
     &__description{
-        @extend %main-text;
         padding-bottom: 42px;
     }
 }
 
 .training_quote{
     padding-top: 63px;
-    @extend %secondary-text;
         &::before {
             content: '\2014';
             margin-right: 10px;
@@ -41,24 +37,28 @@
         content: "";
         position: absolute;
         width: 80px;
-        height: 80px;
-        right: -75px;
+        height: 68px;
+        right: -15px;
+        background: url("../images/icon-OON.jpg") center/cover no-repeat;
     }
 }
 
-.oon::before{
-    background: url(../../images/icons/icon-OON.svg);
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .goforit_oon{
+        &::before{
+            background: url("../images/icon-OON@2x.jpg") center/cover no-repeat;
+        }
+    }
 }
 
 .goforit_headline{
-    @extend %headline-text;
     padding-bottom: 37px;
 }
 
 .goforit_h3{
-    @extend %slogan-text;
+    padding-right: 60px;
     &__description{
-        @extend %main-text;
         padding-bottom: 44px;
     }
 }
@@ -74,16 +74,33 @@
         position: absolute;
         width: 45px;
         height: 140px;
-        right: -75px;
+        right: -5px;
     }
 }
 
 .article_award2016::before{
-    background: url("../../images/icons/icon-winner1.svg");
+    background: url("/crazy_racoons/src/images/icon-winner-1.jpg") center/cover no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .article_award2016::before {
+      background: url("/crazy_racoons/src/images/icon-winner-1@2x.jpg") center/cover no-repeat;
+    }
 }
 
 .article_best2015::before, .article_best2016::before{
-    background: url("../../images/icons/icon-winner2.svg");
+    background: url("/crazy_racoons/src/images/icon-winner-2@1x.jpg") center/cover no-repeat;
+    width: 60px;
+    height: 114px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .article_best2015::before,
+    .article_best2016::before {
+        background: url("/crazy_racoons/src/images/icon-winner-2@2x.jpg") center/cover no-repeat;
+    }
 }
 
 .list_background{
@@ -104,10 +121,9 @@
 }
 
 .article_title{
-    @extend %slogan-text;
     padding-bottom: 17px;
 }
 
 .article_description{
-    @extend %main-text;
+    padding-right: 60px;
 }
