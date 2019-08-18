@@ -1,111 +1,111 @@
 //типовой текст страницы
 .description {
-    @extend %main-text;
+  @extend %main-text;
 }
 
 //типовой текст жирный
 .description--bold {
-    @extend %main-text-bold;
+  @extend %main-text-bold;
 }
 
 //оранжевый текст
 .except-text {
-    @extend %except-text;
+  @extend %except-text;
 }
 
 //для h2 по всей странице, для первого необходимо вручную прописать 20,5px размер
 .section-headline {
-    @extend %headline-text;
+  @extend %headline-text;
 }
 
 //для h2 по всей странице, белый текст на чёрном фоне
 .section-headline--reverse {
-    @extend %headline-reverse-text;
+  @extend %headline-reverse-text;
 }
 
 //текст в верхнем регистре, жирный
 .slogan {
-    @extend %slogan-text;
+  @extend %slogan-text;
 }
 
 //текст в верхнем регистре, жирный, белый на чёрном фоне
 .slogan--reverse {
-    @extend %slogan-reverse-text;
+  @extend %slogan-reverse-text;
 }
 
 //текст medium стандартного размера и формы (чуть жирнее обычного)
 .important-information {
-    @extend %secondary-text;
+  @extend %secondary-text;
 }
 
 //текст medium стандартного размера и формы (чуть жирнее обычного), белый на чёрном фоне
 .important-information--reverse {
-    @extend %secondary-reverse-text;
+  @extend %secondary-reverse-text;
 }
 
 //текст, выделенный голубым
 .description--highlight-blue {
-    @extend %highlited-text;
+  @extend %highlited-text;
 }
 
 //ОРАНЖЕВЫЕ номера элементов списка - для блоков, в которых находится span с номером списка. с перекрытием части цифры
-.list-number {    
-    @extend %numbers-of-list;
-    position: relative;
-     &::before {
-        content: '';
-        position: absolute;
-        top: -1px;
-        left: -1px;
-        width: 110%;
-        height: 100%;
-        background-image: linear-gradient(
-             to bottom,
-             rgba(255, 255, 255, 1) 40%,
-             rgba(255, 255, 255, 0) 40%
-             );
-    }
+.list-number {
+  @extend %numbers-of-list;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 110%;
+    height: 100%;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1) 40%,
+      rgba(255, 255, 255, 0) 40%
+    );
+  }
 }
 
 // ОБЫЧНЫЕ номера элементов списка - с перекрытием части цифры
 .list-number-regular--small {
-    position: relative;
-    font-size: 16px;
-    &::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(
-            to right,
-            rgba(255, 255, 255, 1) 25%,
-            rgba(255, 255, 255, 0) 25%
-            );
-    }
-    &::after {
-        @extend %list-style-square-small-blue;                    
-    }
+  position: relative;
+  font-size: 16px;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 25%,
+      rgba(255, 255, 255, 0) 25%
+    );
+  }
+  &::after {
+    @extend %list-style-square-small-blue;
+  }
 }
 
 .list-number-regular--big {
-    position: relative;
-    &::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(
-            to right,
-            rgba(255, 255, 255, 1) 25%,
-            rgba(255, 255, 255, 0) 25%
-            );
-    }
-    &::after {
-        @extend %list-style-square-big-blue;                    
-    }
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 25%,
+      rgba(255, 255, 255, 0) 25%
+    );
+  }
+  &::after {
+    @extend %list-style-square-big-blue;
+  }
 }
 
 //кнопочки (:
 .button {
-    @extend %button-style;
+  @extend %button-style;
 }

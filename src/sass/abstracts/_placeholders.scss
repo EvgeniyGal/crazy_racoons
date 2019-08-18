@@ -20,6 +20,7 @@
   font-weight: 500;
   font-size: 13.5px;
   color: $btn-main-color;
+  line-height: 1.5;
 }
 
 // для h1
@@ -145,12 +146,11 @@
   white-space: nowrap;
 }
 
-
 // и куда же без кнопочек (: обратите внимание, что последние три кнопки в макете меньше
 %button-style {
   display: block;
-  margin: 0 auto; 
-  width: max-content; 
+  margin: 0 auto;
+  width: max-content;
   font-family: $main-font;
   font-weight: 800;
   font-size: 11px;
@@ -161,11 +161,11 @@
   background-color: $btn-main-color;
   padding-top: 20px;
   padding-bottom: 20px;
-  border: none;  
+  border: none;
   transition: box-shadow 200ms linear;
   &:hover {
-    box-shadow: $btn-box-shadow;    
-  }  
+    box-shadow: $btn-box-shadow;
+  }
 }
 
 %list-style-square-small-black {
@@ -231,7 +231,7 @@
 }
 
 %slash {
-  content: "\338";
+  content: '\338';
   position: absolute;
   color: $secondary-color;
   font-weight: 800;

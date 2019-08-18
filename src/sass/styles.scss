@@ -29,7 +29,7 @@
 @import './layout/section_training';
 
 @import './components/buttons';
-@import './components/ordinary-people.scss';
+@import './layout/ordinary-people.scss';
 @import './layout/section13-leading';
 @import './layout/section12-record';
 @import './layout/section14-opportunity';
@@ -44,7 +44,6 @@
 @import './layout/do-reg-pay.scss';
 @import './layout/footer';
 
-@import './components/warn-section';
-@import './components/so-many-people.scss';
-@import './components/web-career';
-
+@import './layout/warn-section';
+@import './layout/so-many-people.scss';
+@import './layout/web-career';
