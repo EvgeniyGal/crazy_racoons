@@ -58,9 +58,11 @@
     padding: 0.4rem 1rem;
     font: 800 0.9rem $main-font;
     color: $page-footer-font-light;
+    transition: all .3s linear;
     
     &:hover {
       border-color: $page-sub-footer-text-color-hov;
+      background-color: $page-sub-footer-text-color-hov;
     }
   }
   
@@ -91,7 +93,7 @@
       text-decoration: none;
       margin-right: 1rem;
 
-      &:nth-last-of-type(1) {
+      &:nth-last-child(2) {
         margin-right: 0;
       }
 
