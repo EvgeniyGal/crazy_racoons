@@ -1,37 +1,98 @@
 .record-section {
-    margin-bottom: 40px;    
-    &__headline {
-        padding: 0px 75px 30px 90px;               
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 100px;
+    } 
+    &__block1 {
+        @media screen and (min-width: 768px) {
+            float: right;
+        }
     }
-    &__text { 
-        padding: 0px 75px 45px 115px;        
+    &__headline {
+        padding: 0px 75px 30px 90px;
+        height: fit-content; 
+        @media screen and (min-width: 768px) {
+            width: 260px;            
+            padding: 0px 0px 10px 0px;                   
+          }
+        @media screen and (min-width: 1200px) {
+            width: 290px;            
+        }              
+    }
+    &__text {
+        padding: 0px 75px 45px 115px;
+        height: fit-content;        
         position: relative;        
         &::before {
             @extend %dash-small;
             position: absolute;
             left: 90px; 
-            top: 10px;           
+            top: 10px; 
+            @media screen and (min-width: 768px) {
+                left: 0px;
+                top: 8px;                
+            }          
+        }
+        @media screen and (min-width: 768px) {
+            width: 260px; 
+            padding: 0px 0px 40px 45px;
+          }
+        @media screen and (min-width: 1200px) {
+            width: 290px;            
         }
     }
     &__image {
         display: block;
         margin: 0px auto 35px;
-        width: auto;
+        width: auto;        
+        @media screen and (min-width: 768px) {
+            height: fit-content;
+            margin: 0px;
+            float: left;                        
+        }
+        &--mob {
+            display: block;
+            margin: 0px auto 35px;
+            width: auto;
+        }
     }
     &__achievements-list {
         list-style: none;
+        @media screen and (min-width: 768px) {
+            float: right;
+        }
         &__item {
             padding: 0px 75px 30px 95px;
-            position: relative;            
+            &:last-child {
+                padding-bottom: 0px;
+            }
+            position: relative; 
+            @media screen and (min-width: 768px) {
+                width: 260px;            
+                padding: 0px 0px 20px 20px; 
+                &:last-child {
+                    padding-bottom: 0px;
+                }               
+              }
+            @media screen and (min-width: 1200px) {
+                width: 290px;
+            }         
             &__description {                
                 padding-top: 10px;
+                @media screen and (min-width: 768px) {
+                    padding-top: 0px;                    
+                }
             }
             &::before {
                 @extend %list-style-square-small-black;
                 position: absolute;
                 left: 78px;
                 top: 6px;
+                @media screen and (min-width: 768px) {
+                    left: 0px;
+                    top: 8px;
+                }
             }
         }
-    }
+    }    
 }
