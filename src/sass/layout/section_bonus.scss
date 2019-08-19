@@ -47,9 +47,9 @@
 
     &__headline {
       @extend %headline-text-bonus;
-      }
-    }    
-  
+    }
+  }
+
   &__form {
     box-sizing: border-box;
     width: 370px;
@@ -95,14 +95,14 @@
       }
     }
 
-    // &__btn {
-    //   @extend %button-form;
-    //   padding: 13px 22px;
-    //   font-size: 8px;
-    //   margin: 0px;
-    //   width: fit-content;
-    //   box-shadow: none;
-    //   transform: background-color 200ms linear, box-shadow 200ms linear;
-    // }
+    &__btn {
+      @extend %button-style;
+      padding: 13px 22px;
+      font-size: 8px;
+      margin: 0px;
+      width: fit-content;
+      box-shadow: none;
+      transform: background-color 200ms linear, box-shadow 200ms linear;
+    }
   }
 }
