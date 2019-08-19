@@ -7,12 +7,20 @@ img {
   margin-bottom: 44px;
   &__title {
     padding-left: 75px;
+    @media screen and (min-width: 768px) {
+      padding-left: 0;
+      margin-bottom: 25px;
+    }
     & span {
       display: block;
     }
   }
   &__description {
     padding: 0 60px 0 110px;
+    @media screen and (min-width: 768px) {
+      padding-left: 45px;
+      margin-bottom: 45px;
+    }
     color: $secondary-color;
     position: relative;
     margin-bottom: 25px;
@@ -22,6 +30,9 @@ img {
         position: absolute;
         left: 75px;
         top: 13px;
+        @media screen and (min-width: 768px) {
+          left: 0;
+        }
       }
     }
   }
@@ -30,15 +41,54 @@ img {
   }
   &__text {
     padding: 0 65px 0 75px;
+    @media screen and (min-width: 768px) {
+      padding-left: 0;
+    }
     &--bold {
       padding-left: 100px;
       position: relative;
+      @media screen and (min-width: 768px) {
+        padding-left: 0;
+      }
       &::before {
         @extend %list-style-square-small-black;
         position: absolute;
         left: 73px;
         top: 7px;
+        @media screen and (min-width: 768px) {
+          left: 0;
+          top: -10px;
+        }
       }
     }
+  }
+}
+@media screen and (min-width: 768px) {
+  .web-career {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 470px;
+  }
+  .web-career__img {
+    width: 300px;
+  }
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
+  .order-3 {
+    order: 3;
+  }
+  .order-4 {
+    order: 4;
+  }
+  .web-career__text {
+    width: 200px;
+  }
+  .web-career__header {
+    width: 360px;
   }
 }
