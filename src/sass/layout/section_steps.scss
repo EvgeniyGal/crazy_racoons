@@ -3,6 +3,7 @@
 }
 .step_headline {
   padding-bottom: 27px;
+  width: 190px;
 }
 
 .step_description {
@@ -77,4 +78,51 @@
 .text_orange {
   font-size: 15px;
   font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .step_setka{
+    display: flex;
+  }
+
+  .container-mini{
+    width: 640px;
+  }
+
+  .step_left{
+    width: 345px;
+  }
+
+  .step_hor_background{
+    font-size: 298px;
+    right: 46px;
+  }
+
+  .step_vert_background{
+    font-size: 82px;
+    left: 196px;
+  }
+
+  .step_headline{
+    width: 200px;
+  }
+
+  .step_description{
+    width: 200px;
+  }
+
+  .step_right{
+    display: flex;
+    flex-wrap: wrap;
+    width: 316px;
+  }
+
+  .step_list{
+    width: 147px;
+  }
+
+  .slesh_text{
+    margin: 0 0 auto auto;
+    width: 289px;
+  }
 }
