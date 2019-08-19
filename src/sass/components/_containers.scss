@@ -13,3 +13,11 @@
   width: 295px;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 640px;
+  }
+  .ordinary-people__header {
+    width: 175px;
+  }
+}

@@ -35,7 +35,7 @@
   line-height: 1.5;
   @media screen and (min-width: 768px) {
     font-size: 10px;
-  }  
+  }
 }
 
 // для h1
@@ -46,7 +46,8 @@
   color: $main-color;
   text-transform: uppercase;
   @media screen and (min-width: 768px) {
-    font-size: 45px;    
+
+    font-size: 45px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 50px;
@@ -228,8 +229,8 @@
   background-color: $btn-main-color;
   white-space: nowrap;
   @media screen and (min-width: 768px) {
-    font-size: 6px;    
-  }  
+    font-size: 6px;
+  }
 }
 
 // и куда же без кнопочек (: обратите внимание, что последние три кнопки в макете меньше
@@ -308,7 +309,7 @@
   @media screen and (min-width: 1200px) {
     width: 7.5px;
     height: 7.5px;
-  }  
+  }
 }
 
 %list-style-square-big-blue {
