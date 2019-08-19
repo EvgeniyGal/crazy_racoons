@@ -61,6 +61,7 @@
 .list-number {
   @extend %numbers-of-list;
   position: relative;
+
   &::before {
     content: '';
     position: absolute;
@@ -80,6 +81,7 @@
 .list-number-regular--small {
   position: relative;
   font-size: 16px;
+
   &::before {
     content: '';
     position: absolute;
@@ -91,6 +93,7 @@
       rgba(255, 255, 255, 0) 25%
     );
   }
+
   &::after {
     @extend %list-style-square-small-blue;
   }
@@ -98,6 +101,7 @@
 
 .list-number-regular--big {
   position: relative;
+
   &::before {
     content: '';
     position: absolute;
@@ -109,6 +113,7 @@
       rgba(255, 255, 255, 0) 25%
     );
   }
+  
   &::after {
     @extend %list-style-square-big-blue;
   }
