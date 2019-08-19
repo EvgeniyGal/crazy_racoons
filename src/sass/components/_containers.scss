@@ -1,6 +1,12 @@
 .container {
   width: 450px;
   margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 640px;    
+  }
+  @media screen and (min-width: 1200px) {
+    width: 715px;
+  }
 }
 
 .container-mini {

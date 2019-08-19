@@ -45,7 +45,11 @@
   }
 
   &__what-you-get {
-    padding: 0 55px;
+    padding: 0 30px;
+
+    &-headline {
+      margin-bottom: 30px;
+    }
   }
 
   &__what-you-get-list {
@@ -59,7 +63,7 @@
       &__number--bg-orange {
         @extend %numbers-of-list;        
         height: 14px;
-        transform: rotate(-90deg) translate(-100%, -100%);
+        transform: rotate(-90deg) translate(-40%, -100%);
       }
 
       &-desc {
