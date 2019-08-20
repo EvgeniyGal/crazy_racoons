@@ -6,6 +6,7 @@
   line-height: 19.5px;
   @media screen and (min-width: 768px) {
     font-size: 8px;
+    line-height: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 9px;
@@ -20,6 +21,7 @@
   line-height: 19.5px;
   @media screen and (min-width: 768px) {
     font-size: 8px;
+    line-height: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 9px;
@@ -97,6 +99,7 @@
   line-height: 19.5px;
   @media screen and (min-width: 768px) {
     font-size: 9px;
+    line-height: 15px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 10px;
@@ -113,6 +116,7 @@
   line-height: 19.5px;
   @media screen and (min-width: 768px) {
     font-size: 9px;
+    line-height: 15px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 10px;
@@ -128,6 +132,7 @@
   line-height: 19.5px;
   @media screen and (min-width: 768px) {
     font-size: 9px;
+    line-height: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 10px;
@@ -142,6 +147,7 @@
   line-height: 19.5px;
   @media screen and (min-width: 768px) {
     font-size: 9px;
+    line-height: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 10px;
@@ -157,6 +163,7 @@
   line-height: 19.5px;
   @media screen and (min-width: 768px) {
     font-size: 9px;
+    line-height: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 10px;
@@ -172,6 +179,7 @@
   line-height: 19.5px;
   @media screen and (min-width: 768px) {
     font-size: 9px;
+    line-height: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 10px;
@@ -187,6 +195,7 @@
   line-height: 22px;
   @media screen and (min-width: 768px) {
     font-size: 9px;
+    line-height: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 10px;
@@ -202,6 +211,7 @@
   background-color: $secondary-color;
   @media screen and (min-width: 768px) {
     font-size: 9px;
+    line-height: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 10px;
@@ -249,10 +259,16 @@
   padding-top: 20px;
   padding-bottom: 20px;
   border: none;
-  transition: box-shadow 200ms linear;
-  &:hover {
-    box-shadow: $btn-box-shadow;
+  box-shadow: $btn-box-shadow;
+  transition: background-color 100ms linear, box-shadow 100ms linear;
+  &:active {
+    background-color: $btn-active-color;
+    box-shadow: $btn-box-shadow-active;
   }
+  &:hover {
+    background-color: $btn-hover-color;
+    box-shadow: $btn-box-shadow-hover;
+  }  
   @media screen and (min-width: 768px) {
     font-size: 7px;
   }
