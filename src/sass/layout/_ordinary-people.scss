@@ -25,6 +25,15 @@
       position: relative;
     }
   }
+  @media screen and (min-width: 768px) {
+    &__title {
+      margin-bottom: 30px;
+      padding-left: 0;
+    }
+    &__header {
+      margin-right: 45px;
+    }
+  }
 }
 
 .discussion {
@@ -51,7 +60,7 @@
     overflow: auto;
     &::-webkit-scrollbar {
       width: 2px;
-      margin-right: 30px;      
+      margin-right: 30px;
     }
     //колесо прокрутки
     &::-webkit-scrollbar-thumb {
@@ -69,7 +78,20 @@
   }
   &__name {
     font-size: 6px;
-    line-height: 9px;    
+    line-height: 2;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  @media screen and (min-width: 768px) {
+    width: 420px;
+    height: 305px;
+    &__feedback {
+      padding-left: 25px;
+      width: 270px;
+      height: 254px;
+      font-size: 8px;
+      line-height: 12px;
+    }
   }
 }
 
@@ -78,6 +100,9 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    width: 420px;
+  }
 }
 .pagination {
   padding-left: 25px;
@@ -89,6 +114,9 @@
   &__link {
     text-decoration: none;
     font-size: 6px;
+    @media screen and (min-width: 768px) {
+      font-size: 6px;
+    }
     &--active {
       &:hover,
       &:focus {
@@ -113,5 +141,10 @@
     &--prew {
       margin-right: 1px;
     }
+  }
+}
+@media screen and (min-width: 768px) {
+  .ordinary-people-tablet-container {
+    display: flex;
   }
 }

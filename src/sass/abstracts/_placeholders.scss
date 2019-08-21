@@ -6,6 +6,7 @@
   line-height: 19.5px;
   @media screen and (min-width: 768px) {
     font-size: 8px;
+    line-height: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 9px;
@@ -20,6 +21,7 @@
   line-height: 19.5px;
   @media screen and (min-width: 768px) {
     font-size: 8px;
+    line-height: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 9px;
@@ -35,7 +37,7 @@
   line-height: 1.5;
   @media screen and (min-width: 768px) {
     font-size: 10px;
-  }  
+  }
 }
 
 // для h1
@@ -46,7 +48,8 @@
   color: $main-color;
   text-transform: uppercase;
   @media screen and (min-width: 768px) {
-    font-size: 45px;    
+
+    font-size: 45px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 50px;
@@ -96,6 +99,7 @@
   line-height: 19.5px;
   @media screen and (min-width: 768px) {
     font-size: 9px;
+    line-height: 15px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 10px;
@@ -112,6 +116,7 @@
   line-height: 19.5px;
   @media screen and (min-width: 768px) {
     font-size: 9px;
+    line-height: 15px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 10px;
@@ -127,6 +132,7 @@
   line-height: 19.5px;
   @media screen and (min-width: 768px) {
     font-size: 9px;
+    line-height: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 10px;
@@ -141,6 +147,7 @@
   line-height: 19.5px;
   @media screen and (min-width: 768px) {
     font-size: 9px;
+    line-height: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 10px;
@@ -156,6 +163,7 @@
   line-height: 19.5px;
   @media screen and (min-width: 768px) {
     font-size: 9px;
+    line-height: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 10px;
@@ -171,6 +179,7 @@
   line-height: 19.5px;
   @media screen and (min-width: 768px) {
     font-size: 9px;
+    line-height: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 10px;
@@ -186,6 +195,7 @@
   line-height: 22px;
   @media screen and (min-width: 768px) {
     font-size: 9px;
+    line-height: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 10px;
@@ -201,6 +211,7 @@
   background-color: $secondary-color;
   @media screen and (min-width: 768px) {
     font-size: 9px;
+    line-height: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 10px;
@@ -228,8 +239,8 @@
   background-color: $btn-main-color;
   white-space: nowrap;
   @media screen and (min-width: 768px) {
-    font-size: 6px;    
-  }  
+    font-size: 6px;
+  }
 }
 
 // и куда же без кнопочек (: обратите внимание, что последние три кнопки в макете меньше
@@ -248,10 +259,16 @@
   padding-top: 20px;
   padding-bottom: 20px;
   border: none;
-  transition: box-shadow 200ms linear;
-  &:hover {
-    box-shadow: $btn-box-shadow;
+  box-shadow: $btn-box-shadow;
+  transition: background-color 100ms linear, box-shadow 100ms linear;
+  &:active {
+    background-color: $btn-active-color;
+    box-shadow: $btn-box-shadow-active;
   }
+  &:hover {
+    background-color: $btn-hover-color;
+    box-shadow: $btn-box-shadow-hover;
+  }  
   @media screen and (min-width: 768px) {
     font-size: 7px;
   }
@@ -308,7 +325,7 @@
   @media screen and (min-width: 1200px) {
     width: 7.5px;
     height: 7.5px;
-  }  
+  }
 }
 
 %list-style-square-big-blue {

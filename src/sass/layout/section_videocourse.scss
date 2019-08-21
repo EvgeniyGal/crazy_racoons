@@ -1,0 +1,241 @@
+.video-course__desc-image {
+  display: none;
+}
+
+.video-course-section {
+  text-align: center;
+  padding: 0 90px;
+
+  &__headline {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    display: flex;
+    text-align: left;
+
+    &::before {
+      @extend %dash-big;
+      width: 40px;
+      transform: translateY(500%);
+      margin-right: 20px;
+    }
+  }
+
+  &__image {
+    padding: 0;
+
+    &-foto {
+      display: block;
+      margin: 35px 0 30px;
+    }
+  }
+
+  &__what-is-list {
+    padding: 0 74px;
+
+    &__item {
+      list-style-type: none;
+      text-align: left;
+
+      &__headline {
+        margin-bottom: 15px;
+      }
+
+      &__description {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__what-you-get {
+    padding: 0 36px;
+
+    &-headline {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__what-you-get-list {
+    padding: 0 36px;
+
+    &__item {
+      display: flex;
+      margin-bottom: 30px;
+      list-style-type: none;
+
+      &__number--bg-orange {
+        @extend %numbers-of-list;
+        height: 14px;
+        transform: rotate(-90deg) translate(-40%, -100%);
+      }
+
+      &-desc {
+        &__headline {
+          margin-bottom: 5px;
+        }
+
+        &__description {
+          margin: 0;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &__price {
+    display: flex;
+    margin-bottom: 80px;
+
+    &__text {
+      padding-top: 25px;
+
+      &--bg-blue {
+        font-size: 17px;
+        line-height: 30px;
+      }
+    }
+
+    &__numbers {
+      font-family: $main-font;
+      font-weight: 800;
+      line-height: 44px;
+
+      &__old {
+        font-size: 17px;
+        color: $main-text-color;
+        text-decoration: line-through;
+      }
+
+      &__new {
+        font-size: 36px;
+        color: $secondary-color;
+
+        &--grn {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .video-course {
+    padding: 0;
+
+    &__title {
+      display: flex;
+      flex-direction: row-reverse;
+      margin-bottom: 50px;
+    }
+
+    &__desc {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+
+      &-image {
+        display: block;
+        padding: 18px 0;
+      }
+    }
+  }
+
+  .video-course-section {
+    text-align: left;
+    padding: 65px 25px 65px 0;
+    margin: 0;
+    margin-left: 54px;
+
+    &__image {
+      margin: 0;
+    }
+
+    &__what-is-list {
+      padding: 45px 0;
+
+      &__item {
+        display: flex;
+        margin-right: 80px;
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &__headline {
+          margin-bottom: 0;
+          margin-right: 25px;
+        }
+
+        &__description {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__what-you-get {
+      display: flex;
+      padding: 0;
+      margin-bottom: 90px;
+
+      &-headline {
+        width: 100px;
+        margin-right: 60px;
+      }
+
+      &-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+
+        &__item {
+          width: 150px;
+          margin-right: 25px;
+
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
+
+          &:nth-last-child(-n + 3) {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    &__price {
+      margin-bottom: 0;
+      align-items: flex-end;
+
+      &__text {
+        margin-right: 10px;
+        padding: 0;
+      }
+
+      &__numbers {
+        line-height: 20px;
+
+        &__old {
+          font-weight: 500;
+          font-size: 8px;
+          line-height: 13.5px;
+          margin: 0;
+        }
+
+        &__new {
+          font-size: 12px;
+          line-height: 20px;
+
+          &--grn {
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}

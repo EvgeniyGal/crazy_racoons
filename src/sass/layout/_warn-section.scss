@@ -4,6 +4,9 @@
     & span {
       display: block;
     }
+    @media screen and (min-width: 768px) {
+      padding-left: 0;
+    }
     margin-bottom: 20px;
     padding-left: 60px;
   }
@@ -20,6 +23,18 @@
         position: absolute;
         left: 25px;
         top: 13px;
+        @media screen and (min-width: 768px) {
+          left: 0;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        padding: 0 60px 0 45px;
+      }
+    }
+    &__img {
+      @media screen and (min-width: 768px) {
+        display: block;
+        height: auto;
       }
     }
   }
@@ -53,5 +68,34 @@
     &--slogan {
       display: block;
     }
+    @media screen and (min-width: 768px) {
+      padding-right: 90px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .image-section {
+    position: relative;
+    display: inline-block;
+    margin-right: 86px;
+    padding-left: 60px;
+  }
+  .warn_vertical_background {
+    position: absolute;
+    left: 20px;
+    top: 45%;
+    z-index: -1;
+    color: $secondary-color;
+    font-family: $main-font;
+    font-weight: 800;
+    opacity: 0.1;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    font-size: 150px;
+  }
+  .warn-section__header__list {
+    display: inline-block;
+    width: 300px;
   }
 }
