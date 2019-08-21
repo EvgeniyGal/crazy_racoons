@@ -1,9 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .container {
   width: 450px;
   margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 640px;    
+  }
+  @media screen and (min-width: 1200px) {
+    width: 715px;
+  }
 }
 
 .container-mini {
   width: 295px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .ordinary-people__header {
+    width: 175px;
+  }
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
 }
